@@ -1,0 +1,115 @@
+.subscription-form {
+  // margin-left: 90px;
+  // margin-top: 12px;
+
+  
+
+  // @include desktop {
+  //       width: 1200px;
+  //   }
+
+  &__title {
+    text-align: center;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--second-brand-color);
+  margin-bottom: 20px;
+}
+
+  &__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+   @include tablet {
+    
+    display: flex;
+    flex-direction: column;
+
+    }
+
+     @include desktop{
+      display: flex;
+      flex-direction: row ;
+      flex-wrap: nowrap;
+      
+
+    // justify-content: space-between;
+  
+  }
+}
+
+
+  &__input {
+  width: 450px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+
+  @include desktop{
+    width: 358px;
+  }
+}
+
+  &__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+  &__button {
+  background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--second-brand-color);
+  padding: 10px 29px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+
+  &__button:hover,
+  &__button:focus {
+  background-color: #188ce8;
+}
+
+  &__icon {
+  margin-left: 10px;
+}
+}
+
+// .subscription-form__lable{
+//   width: 100%;
+// }

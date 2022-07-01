@@ -1,0 +1,67 @@
+
+
+.advantage {
+  
+
+
+   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+  }
+
+  &__item {
+
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+    }
+
+  @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+
+  }
+
+  
+
+  &__container {
+    display: flex;
+
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 270px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    text-align: center;
+
+    @include tablet {
+    text-align: left;
+    }
+  }
+
+  &__subtitle {
+    line-height: 1.71;
+    color: var(--secondary-color);
+  }
+}
+
+
+
+
