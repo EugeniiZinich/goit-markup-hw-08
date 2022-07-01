@@ -38,6 +38,7 @@
       display: flex;
       flex-direction: row ;
       flex-wrap: nowrap;
+      gap: 0;
       
 
     // justify-content: space-between;
@@ -47,7 +48,6 @@
 
 
   &__input {
-  // width: 450px;
   width: 100%;
   max-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -59,10 +59,11 @@
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+  
 
   @include desktop{
     width: 358px;
+    margin-right: 12px;
     
   }
 }
@@ -88,7 +89,7 @@
 
   display: flex;
   align-items: center;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--second-brand-color);
@@ -102,6 +103,10 @@
     width: 200px;
     height: 50px;
     margin: 0 auto;
+  }
+
+  @include desktop{
+    margin: 0;
   }
 }
 
@@ -123,5 +128,9 @@
 .subscription-form__lable{
   text-align: center;
   width: 100%;
+
+  @include desktop{
+    max-width: 368px;
+  }
 }
 

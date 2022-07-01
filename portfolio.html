@@ -19,7 +19,7 @@
   </head>
   <body>
     <!------------HEDER SECTION----------->
-    <header class="header-page">
+<header class="header-page">
     <div class="container header-page__body">
         <a href="index.html" class="logo-header">
           <span class="logo-header__accent-blue">Web</span><span class="logo-header__accent-black">Studio</span>
@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        
+
         <ul class="contact">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
@@ -74,7 +74,9 @@
               <use class="mobile-menu__close" href="./images/symbol-defs.svg#icon-menu-close-mob"></use>
             </svg>
           </button>
-          <div class="menu">
+          
+          <div class="menu-body">
+            <div class="menu">
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="./index.html" class="menu__link menu__link--current">Студия</a>
@@ -90,13 +92,16 @@
             </ul>
           </div>
 
-          <div class="menu-contact">
-            <ul class="menu-contact-title">
+         <div class="contact-container">
+           <div class="menu-contact">
+            <ul class="menu-contact-list">
               <li class="menu-contact__item">
-                <a href="mailto:info@devstudio.com" class="menu-contact__link">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="menu-contact__link">
+                  <span class="menu-contact__tel">+38 096 111 11 11</span></a>
               </li>
               <li class="menu-contact__item">
-                <a href="tel:+380961111111" class="menu-contact__link">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="menu-contact__link">
+                  <span class="menu-contact__mail">info@devstudio.com</span></a>
               </li>
             </ul>
           </div>
@@ -117,9 +122,12 @@
               </li>
             </ul>
           </div>
+         </div>
+          </div>
         </div>
     </div>
   </header>
+
 
     <main>
       <!------------FILTER SECTION----------->
