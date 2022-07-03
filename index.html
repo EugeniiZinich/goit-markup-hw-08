@@ -78,7 +78,7 @@
             <div class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link menu__link--current">Студия</a>
+                <a href="./index.html" class="menu__link navigation__link--current">Студия</a>
               </li>
 
               <li class="menu__item">
@@ -129,9 +129,11 @@
 
     <main>
       <!------------HERO SECTION----------->
-      <section class="hero container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+      <section class="hero ">
+         <div class="container">
+           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+         </div>
       </section>
 
       <!------------ADVANTAGE SECTION----------->
@@ -193,17 +195,25 @@
           <h2 class="about__title title">Чем мы занимаемся</h2>
           <ul class="about__list">
             <li class="about__items ">
-              <img src="./images/project-work.jpg" alt="верстка сайта" width="370" />
+              <img 
+              srcset="./images/project-work.jpg 1x, ./images/project-work-2x.jpg 2x"
+              src="./images/project-work.jpg" 
+              alt="верстка сайта" 
+              width="370" />
               <p>Десктопные приложения</p>
             </li>
 
             <li class="about__items ">
-              <img src="./images/design.jpg" alt="работа над дизайном" width="370" />
+              <img 
+              srcset="./images/design.jpg 1x, ./images/design-2x.jpg 2x"
+              src="./images/design.jpg" alt="работа над дизайном" width="370" />
               <p>Мобильные приложения</p>
             </li>
 
             <li class="about__items ">
-              <img src="./images/color-matching.jpg" alt="подбор цвета под макет" width="370" />
+              <img 
+              srcset="./images/color-matching.jpg 1x, ./images/color-matching-2x.jpg 2x"
+              src="./images/color-matching.jpg" alt="подбор цвета под макет" width="370" />
               <p>Дизайнерские решения</p>
             </li>
           </ul>
@@ -215,9 +225,11 @@
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list">
+
             <li class="team__item">
               <img
-                src="./images/Product-Designer.jpg"
+                srcset="./images/Product-Designer-1x.jpg 1x, ./images/Product-Designer-2x.jpg 2x"
+                src="./images/Product-Designer-1x.jpg"
                 alt="Фото сотрудника студии Product Designer"
                 width="270"
               />
@@ -259,7 +271,8 @@
 
             <li class="team__item">
               <img
-                src="./images/Frontend-Developer.jpg"
+                srcset="./images/Frontend-Developer-1x.jpg 1x, ./images/Frontend-Developer-2x.jpg 2x"
+                src="./images/Frontend-Developer-1x.jpg"
                 alt="Фото сотрудника студии Frontend Developer"
                 width="270"
               />
@@ -301,7 +314,8 @@
 
             <li class="team__item">
               <img
-                src="./images/Marketing.jpg"
+                srcset="./images/Marketing-1x.jpg 1x, ./images/Marketing-2x.jpg 2x"
+                src="./images/Marketing-1x.jpg"
                 alt="Фото сотрудника студии Marketing"
                 width="270"
               />
@@ -343,7 +357,8 @@
 
             <li class="team__item">
               <img
-                src="./images/UI-Designer.jpg"
+                srcset="./images/UI-Designer-1x.jpg 1x, ./images/UI-Designer-2x.jpg 2x"
+                src="./images/UI-Designer-1x.jpg"
                 alt="Фото сотрудника студии UI Designer"
                 width="270"
               />

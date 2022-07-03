@@ -1,17 +1,13 @@
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscription-form{
+    width: 100%;
+  }
+}
+
 .subscription-form {
-
-  width: 100%;
-  // margin-left: 90px;
-  // margin-top: 12px;
-
-  
-
-  // @include desktop {
-  //       width: 1200px;
-  //   }
-
   &__title {
-    text-align: center;
+  text-align: center;
   font-size: 14px;
   line-height: 1.45;
   letter-spacing: 0.03em;
@@ -19,6 +15,10 @@
 
   color: var(--second-brand-color);
   margin-bottom: 20px;
+
+  @include desktop {
+    text-align: start;
+  }
 }
 
   &__body {
@@ -39,9 +39,6 @@
       flex-direction: row ;
       flex-wrap: nowrap;
       gap: 0;
-      
-
-    // justify-content: space-between;
   
   }
 }
@@ -119,10 +116,6 @@
   margin-left: 10px;
 }
 }
-
-// .subscription-form__lable{
-//   width: 100%;
-// }
 
 
 .subscription-form__lable{
