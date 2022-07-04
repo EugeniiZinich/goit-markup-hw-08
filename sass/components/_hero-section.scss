@@ -1,29 +1,14 @@
 .hero {
 
-  // @include mobile{
- 
-  //   padding-top: 118px;
-  //   padding-bottom: 118px;
-  // }
-
- 
-
-  // @include desktop{
-    
-  // }
-
-
   background-color: #c4c4c4;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img-mob.jpg);
-    
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,6 +17,8 @@
    @include tablet{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img-tab.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
     
   }
 
@@ -40,6 +27,9 @@
     url(../images/hero-img.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    height: 100%;
   }
 
   &__title {
@@ -91,11 +81,3 @@
 }
 
 
-
-// @media screen and (min-width: 320px) and (max-width: 767px) {
-//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(..);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//   }
