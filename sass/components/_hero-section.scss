@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  
+    background-image: url(../images/hero-img-mob-2x.jpg);
+  
+  }
 
   
    @include tablet{
@@ -19,6 +26,12 @@
     url(../images/hero-img-tab.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
+
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/hero-img-tab-2x.jpg);
+  }
     
   }
 
@@ -30,6 +43,12 @@
     max-width: 1600px;
     height: 600px;
     height: 100%;
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/hero-img-2x.jpg);
+  }
   }
 
   &__title {
